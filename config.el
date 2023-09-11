@@ -71,6 +71,9 @@
       "C-M-s" #'isearch-forward
       "C-M-r" #'isearch-backward)
 
+(map! "C-s" #'swiper-isearch
+      "C-S" #'swiper-isearch-thing-at-point)
+
 (when (>= emacs-major-version 29)
     (pixel-scroll-precision-mode t))
 

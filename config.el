@@ -74,8 +74,7 @@
 (map! "C-s" #'swiper-isearch-thing-at-point
       "C-S" #'swiper-isearch)
 
-(when (>= emacs-major-version 29)
-    (pixel-scroll-precision-mode t))
+(pixel-scroll-precision-mode 0)
 
 ;; Yes, I really want to quit.
 (setq confirm-kill-emacs nil)
